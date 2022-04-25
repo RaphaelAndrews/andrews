@@ -8,9 +8,28 @@ html {
     scroll-behavior: smooth;
 }
 
+h1 {
+    font-size: var(--h1-font-size);
+}
+
+h2 {
+    font-size: var(--h2-font-size);
+}
+
+h3 {
+    font-size: var(--h3-font-size);
+}
+
+h4 {
+    font-size: var(--h4-font-size);
+}
+
 body {
-    background-color: var(--body-color);
-    color: var(--text-color);
+    background-color: var(--first-color);
+    color: var(--second-color);
+    font-size: var(--normal-font-size);
+    font-family: var(--first-font);
+    font-weight: var(--font-extrabold);
     transition: .4s; /* Animação Light mode */
 }
 
@@ -35,82 +54,57 @@ img {
 
 
 /*========== Variáveis Light Theme ==========*/
-body.light-theme {
-    --title-color: hsl(var(--second-hue), 15%, 15%);
-    --card-color: hsl(var(--second-hue), var(--sat-alt), 100%);
-    --text-color: hsl(var(--second-hue), 0%, 35%);
-    --alt-color: hsl(var(--second-hue), 0%, 50%);
-    --body-color: hsl(var(--second-hue), 100%, 99%);
-    --container-color: #fff;
-}
-  
+
 /*========== 
    Mudanças de cor em algumas partes do site no ligth theme
 ==========*/
 
-.light-theme .scroll-header,
-.light-theme .project__card,
-.light-theme .skill__card,
-.light-theme .home__social-link {
-    box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
-}
-
-.light-theme .project__title-card {
-    color: var(--text-color);
-}
-
-.light-theme .project__overlay {
-    background: hsla(0, 0%, 100%, .5);
-}
-
-.light-theme .nav__menu {
-    background-color: hsla(var(--second-hue), 0%, 90%, .8);
-}
-
 /*=============== Classes Reutilizáveis ===============*/
 
 .container {
-    max-width: 968px;
-    margin-left: .625rem;
-    margin-right: .625rem;
+    padding: 0rem 0.75rem;
 }
 
 .grid {
-    display: grid;
-    gap: 1.25rem;
+
 }
 
 .main {
     overflow: clip;
 }
-  
-.section {
-    padding: 4.5rem 0 1rem;
-}
 
 .section__title {
-    font-family: var(--first-font);
-    font-size: var(--biggest-font-size);
-    font-weight: var(--font-bold);
-    border-left: 4px solid var(--alt-color);
-    padding-left: 0.5rem;
-    margin-left: 7%;
-    margin-bottom: 1.5rem;
+
 }
 
+/*=============== SCROLL TOP ===============*/
+.scroll__top{
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    z-index: var(--z-fixed);
+}
+
+.scroll__icon {
+    font-size: 1.5rem;
+    background-color: var(--second-color);
+    border-radius: 50%;
+    padding: .5rem;
+    color: var(--first-color);
+}
 
 /*=============== SCROLL ===============*/
 ::-webkit-scrollbar {
     width: .6rem;
     border-radius: .5rem;
-    background-color: hsl(var(--second-hue), 0%, 38%);
+    background-color: hsl(var(--first-hue), 0%, 38%);
 }
 
 ::-webkit-scrollbar-thumb {
-    background-color: hsl(var(--second-hue), 0%, 26%);
+    background-color: hsl(var(--first-hue), 0%, 26%);
     border-radius: .5rem;
 }
 
 ::-webkit-scrollbar-thumb:hover {
-    background-color: hsl(var(--second-hue), 0%, 20%);
+    background-color: hsl(var(--first-hue), 0%, 20%);
 }

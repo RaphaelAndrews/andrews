@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Roboto:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 :root {
     --header-height: 3.5rem;
@@ -6,57 +6,46 @@
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     /*
-            Pink: hsl(345, 100%, 43%)        
+            Orange: hsl(12, 100%, 50%)  
     */
 
-    --first-hue: 345;
-    --sat: 100%;
-    --lig: 43%;
-    --second-hue: 0;
-    --sat-alt: 0%;
+    --first-hue: 0;
+    --sat: 0%;
+    --lig: 13%;
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 39%); /* -4% (hover) */
-    --second-color: hsl(var(--second-hue), var(--sat-alt), 100%);
-    --text-color-light: hsl(var(--second-hue), var(--sat-alt), 13%);
-    --alt-color: hsl(var(--second-hue), var(--sat-alt), 27%);
-    --card-color: hsl(var(--second-hue), var(--sat-alt), 6%);
-    --text-color: hsl(var(--second-hue), var(--sat-alt), 85%);
-    --body-color: hsl(var(--second-hue), var(--sat-alt), 9%);
+    --second-color: hsl(var(--first-hue), var(--sat), 97%);
+    --alternative-color: hsl(var(--first-hue), var(--sat), 68%);
     
     /*========== Font and typography ==========*/
-    /*font-family: 'IBM Plex Mono', monospace;
-    font-family: 'Ubuntu', sans-serif;*/
+    /*font-family: 'Poppins', sans-serif;*/
 
     --first-font: 'Poppins', sans-serif;
-    --second-font: 'Roboto', sans-serif;
-    --biggest-font-size: 1.5rem;
-    --big-font-size: 1.25rem;
-    --normal-font-size: 1.125rem;
-    --small-font-size: 1rem;
-    --tiny-font-size: .875rem;
-    --smaller-font-size: .625rem;
+    --h1-font-size: 2.25rem;
+    --h2-font-size: 1.75rem;
+    --h3-font-size: 1.25rem;
+    --h4-font-size: 1.125rem;
+    --normal-font-size: 1rem;
+    --tiny-font-size: .75rem;
 
     /*========== Font weight ==========*/
     --font-regular: 400;
     --font-medium: 500;
     --font-semibold: 600;
     --font-bold: 700;
+    --font-extrabold: 800;
+    --font-black: 900;
 
     /*========== z index ==========*/
-    --z-tooltip: 10;
-    --z-fixed: 100;
-    --z-skill: 1000;
+    --z-asset: -1;
+    --z-fixed: 10;
+    --z-menu: 100;
 }
 
 /* Responsive typography */
-@media screen and (min-width: 968px) {
+@media screen and (min-width: 780px) {
     :root {
-        --biggest-font-size: 3rem;
-        --big-font-size: 2.625rem;
-        --normal-font-size: 2rem;
-        --small-fint-size: 1.75rem;
-        --tiny-font-size: 1.25rem;
+        
     }
 }
 

@@ -1,11 +1,37 @@
 @import 'variables.css';
 @import 'base.css';
 
-.footer__container {
-    margin-top: 2rem;
-    padding: 2rem 0 6rem;
-    background-image: url(/assets/img/Background.svg);
-    background-position: center center;
-    background-repeat: no-repeat;
-    /*background-size: cover;*/
+.footer {
+    padding: 2.5rem 0;
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 2rem;    
+}
+
+.footer__links {
+    display: flex;
+    gap: 1.5rem;
+    font-size: 1.5rem;
+}
+
+.footer__link {
+    color: var(--alternative-color);
+    display: flex;
+    width: max-content;
+    border-radius: .25rem;
+    padding: .25rem;
+}
+
+.footer__link:hover {
+    color: var(--alternative-color);
+    background-color: var(--second-color);
+}
+
+.footer__info {
+    display: grid;
+    gap: .5rem;
+    font-size: var(--tiny-font-size);
+    font-weight: var(--font-regular);
+    color: var(--alternative-color);
 }

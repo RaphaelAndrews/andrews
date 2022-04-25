@@ -1,72 +1,45 @@
-/*========== Skill Page ==========*/
-const skillViews = document.querySelectorAll('.skill__page'),
-        skillBtns = document.querySelectorAll('.skill__button'),
-        skillClose = document.querySelectorAll('.skill__page-close')
+/*=============== SHOW MENU ===============*/
+const navToggle = document.getElementById('header-toggle'),
+      navMenu = document.getElementById('nav-menu'),
+      navClose = document.getElementById('nav-close')
 
-let skill = function(skillClick) {
-    skillViews[skillClick].classList.add('active-skill')
-}
-
-skillBtns.forEach((sb, i) =>{
-    sb.addEventListener('click', () => {
-        skill(i)
-    })
-})
-
-skillClose.forEach((sc) => {
-    sc.addEventListener('click', () => {
-        skillViews.forEach((sv) => {
-            sv.classList.remove('active-skill')
-        })
-    })
-})
-
-
-/*=============== SCROLL ACTIVE LINK ===============*/
-const sections = document.querySelectorAll('section[id]')
-
-function scrollActive(){
-    const scrollY = window.pageYOffset
-
-    sections.forEach(current => {
-        const sectionHeight = current.offsetHeight,
-              sectionTop = current.offsetTop - 58,
-              sectionId = current.getAttribute('id')
-
-        if(scrollY > sectionTop && scrollY <= sectionTop + sectionHeight){
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.add('active-link')
-        }else{
-            document.querySelector('.nav__menu a[href*=' + sectionId + ']').classList.remove('active-link')
-        }
+/*===== MENU SHOW =====*/
+/* Validate if constant exists */
+if(navToggle){
+    navToggle.addEventListener('click', () =>{
+        navMenu.classList.remove('hidden')
     })
 }
-window.addEventListener('scroll', scrollActive)
 
-/*=============== LIGHT DARK THEME ===============*/ 
-const themeButton = document.getElementById('theme-button')
-const lightTheme = 'light-theme'
-const iconTheme = 'bx-sun'
-
-// Previously selected topic (if user selected)
-const selectedTheme = localStorage.getItem('selected-theme')
-const selectedIcon = localStorage.getItem('selected-icon')
-// We obtain the current theme that the interface has by validating the light-theme class
-const getCurrentTheme = () => document.body.classList.contains(lightTheme) ? 'dark' : 'light'
-const getCurrentIcon = () => themeButton.classList.contains(iconTheme) ? 'bx bx-moon' : 'bx bx-sun'
-// We validate if the user previously chose a topic
-if (selectedTheme) {
-  // If the validation is fulfilled, we ask what the issue was to know if we activated or deactivated the light
-  document.body.classList[selectedTheme === 'dark' ? 'add' : 'remove'](lightTheme)
-  themeButton.classList[selectedIcon === 'bx bx-moon' ? 'add' : 'remove'](iconTheme)
+/*===== MENU HIDDEN =====*/
+/* Validate if constant exists */
+if(navClose){
+    navClose.addEventListener('click', () =>{
+        navMenu.classList.add('hidden')
+    })
 }
 
-// Activate / deactivate the theme manually with the button
-themeButton.addEventListener('click', () => {
-    // Add or remove the light / icon theme
-    document.body.classList.toggle(lightTheme)
-    themeButton.classList.toggle(iconTheme)
+/*=============== REMOVE MENU MOBILE ===============*/
+const navLink = document.querySelectorAll('.nav__link')
 
-    // We save the theme and the current icon that the user chose
-    localStorage.setItem('selected-theme', getCurrentTheme())
-    localStorage.setItem('selected-icon', getCurrentIcon())
-})
+function linkAction(){
+    const navMenu = document.getElementById('nav-menu')
+    // When we click on each nav__link, we remove the show-menu class
+    navMenu.classList.add('hidden')
+}
+navLink.forEach(n => n.addEventListener('click', linkAction))
+
+/*=============== SCROLL TOP ===============*/
+//Get the button:
+scrollTop = document.getElementById("scroll__top");
+
+// When the user scrolls down 20px from the top of the document, show the button
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+    scrollTop.style.display = "block";
+  } else {
+    scrollTop.style.display = "none";
+  }
+}
