@@ -92,3 +92,34 @@
     50%  { transform: translateY(18px); }
     100% { transform: translateY(0); }
 }
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 780px) {
+    .home__links,
+    .footer__links {
+        font-size: 2.5rem;
+    }
+
+    .home__scroll {
+        bottom: 40px;
+        width: 30px;
+        height: 54px;
+        border: 3px solid #f7f7f7;
+    }
+
+    .home__scroll::before {
+        position: absolute;
+        top: 6px;
+        width: 6px;
+        height: 6px;
+        margin-left: -3px;
+    }
+
+    @keyframes sdb10 {
+        50%  { transform: translateY(30px); }
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    
+}

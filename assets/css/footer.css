@@ -35,3 +35,9 @@
     font-weight: var(--font-regular);
     color: var(--alternative-color);
 }
+
+@media screen and (min-width: 1440px) {
+    .footer {
+        gap: 3rem;
+    }
+}

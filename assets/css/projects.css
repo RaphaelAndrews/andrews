@@ -62,3 +62,42 @@
 .project__card:hover .project__overlay {
     bottom: 0;
 }
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 780px) {
+    .projects {
+        padding: 8rem 0 4rem;
+    }
+
+    .projects__title {
+        margin-bottom: 4rem;
+    }
+    
+    .project__grid {
+        gap: 3rem;
+    }
+
+    .project__card {
+        max-width: 700px;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    .projects {
+        padding: 8rem 0 4rem;
+    }
+
+    .projects__title {
+        margin-bottom: 6rem;
+    }
+    
+    .project__grid {
+        grid-template-columns: repeat(2, max-content);
+        justify-content: center;
+        gap: 3rem;
+    }
+
+    .project__card {
+        width: inherit;
+    }
+}

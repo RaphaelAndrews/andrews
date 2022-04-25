@@ -39,14 +39,38 @@
     /*========== z index ==========*/
     --z-asset: -1;
     --z-fixed: 10;
-    --z-menu: 100;
+    --z-menu: 1000;
 }
 
-/* Responsive typography */
-@media screen and (min-width: 780px) {
-    :root {
-        
+/*=============== RESPONSIVE ===============*/
+@media screen and (max-width: 320px) {
+    .nav__menu {
+        padding: 1rem 1.5rem;
     }
 }
 
+@media screen and (min-width: 780px) {
+    :root {
+        --header-height: 4.5rem;
 
+        --h1-font-size: 4rem;
+        --h2-font-size: 3rem;
+        --h3-font-size: 2rem;
+        --h4-font-size: 1.5rem;
+        --normal-font-size: 1.25rem;
+        --tiny-font-size: 1rem;
+    }
+}
+
+@media screen and (min-width: 1440px) {
+    :root {
+        --header-height: 5rem;
+
+        --h1-font-size: 6rem;
+        --h2-font-size: 4.5rem;
+        --h3-font-size: 3rem;
+        --h4-font-size: 2.25rem;
+        --normal-font-size: 2rem;
+        --nav-font-size: 1.25rem;
+    }
+}

@@ -38,7 +38,7 @@ window.onscroll = function() {scrollFunction()};
 
 function scrollFunction() {
   if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
-    scrollTop.style.display = "block";
+    scrollTop.style.display = "inherit";
   } else {
     scrollTop.style.display = "none";
   }

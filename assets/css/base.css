@@ -65,16 +65,8 @@ img {
     padding: 0rem 0.75rem;
 }
 
-.grid {
-
-}
-
 .main {
     overflow: clip;
-}
-
-.section__title {
-
 }
 
 /*=============== SCROLL TOP ===============*/
@@ -107,4 +99,16 @@ img {
 
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--first-hue), 0%, 20%);
+}
+
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 780px) {
+    .scroll__top {
+        bottom: 2rem;
+        right: 2rem;
+    }
+
+    .scroll__icon {
+        font-size: 3rem;
+    }
 }
