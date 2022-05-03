@@ -1,26 +1,29 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
 
 :root {
-    --header-height: 3.5rem;
-
     /*========== Colors ==========*/
     /*Color mode HSL(hue, saturation, lightness)*/
     /*
             Orange: hsl(12, 100%, 50%)  
+            Blue: hsl(211, 100%, 48%)  
+            Cyan: hsl(170, 90%, 43%) 
     */
 
-    --first-hue: 0;
-    --sat: 0%;
-    --lig: 13%;
+    --first-hue: 170;
+    --sat: 90%;
+    --lig: 43%;
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --second-color: hsl(var(--first-hue), var(--sat), 97%);
-    --alternative-color: hsl(var(--first-hue), var(--sat), 68%);
+    --second-color: hsl(0, 0%, 97%);
+    --alternative-color: hsl(230, 6%, 18%);
     
     /*========== Font and typography ==========*/
-    /*font-family: 'Poppins', sans-serif;*/
+    /*font-family: 'Poppins', sans-serif;
+    font-family: 'IBM Plex Mono', monospace;*/
 
     --first-font: 'Poppins', sans-serif;
+    --second-font: 
     --h1-font-size: 2.25rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.25rem;
@@ -39,7 +42,7 @@
     /*========== z index ==========*/
     --z-asset: -1;
     --z-fixed: 10;
-    --z-menu: 1000;
+    --z-menu: 100;
 }
 
 /*=============== RESPONSIVE ===============*/
@@ -64,13 +67,12 @@
 
 @media screen and (min-width: 1440px) {
     :root {
-        --header-height: 5rem;
-
-        --h1-font-size: 6rem;
-        --h2-font-size: 4.5rem;
+        --h1-font-size: 3.125rem;
+        --h2-font-size: 2rem;
         --h3-font-size: 3rem;
         --h4-font-size: 2.25rem;
-        --normal-font-size: 2rem;
+        --normal-font-size: 1rem;
+        --tiny-font-size: .625rem;
         --nav-font-size: 1.25rem;
     }
 }

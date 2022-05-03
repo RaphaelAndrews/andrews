@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="./assets/css/variables.css">
         <link rel="stylesheet" href="./assets/css/home.css">
         <link rel="stylesheet" href="./assets/css/projects.css">
+        <link rel="stylesheet" href="./assets/css/about.css">
 
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
@@ -23,26 +24,69 @@
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
-            <nav class="nav">
-                    <a href="#home" class="nav__logo">ANDREWS</a>
-
-                <div class="nav__menu hidden" id="nav-menu">
-                    <i class="bx bx-x nav__close" id="nav-close"></i>
-                    <ul class="nav__list">
-                        <li class="nav__item">
-                            <a href="#home" class="nav__link active">Home</a>
-                        </li>
-
-                        <li class="nav__item">
-                            <a href="#projects" class="nav__link">Projetos</a>
-                        </li>
-                    </ul>
-                </div>
+            <div class="header__box">
+                <a href="#home">
+                    <div class="header__logo">
+                        <img src="./assets/img/Logo.svg" alt="Raphael Logo" class="header__img">
+                    </div>
+                </a>
 
                 <div class="header__toggle" id="header-toggle">
                     <i class='bx bx-menu header__drop' id="theme-button" ></i>
-                </div> 
-            </nav>
+
+                    <div class="header__menu">MENU</div>
+                </div>
+            </div>
+
+            <div class="header__overlay hidden" id="header-overlay">
+                <div>
+                    <h3 class="overlay__title">Andrews</h3>
+                </div>
+                
+                <ul class="header__nav___list">
+                    <li class="nav__item">
+                        <a href="#home" class="nav__link active">Home</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Sobre</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Skills</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">CV</a>
+                    </li>
+
+                    <li class="nav__item">
+                        <a href="#projects" class="nav__link">Projetos</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="header__links">
+                <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="home__link" target="_blank">
+                    <i class='bx bxl-whatsapp'></i>
+                </a>
+
+                <a href="https://www.linkedin.com/in/raphael-andrews/" class="home__link" target="_blank">
+                    <i class='bx bxl-linkedin' ></i>
+                </a>
+
+                <a href="https://github.com/RaphaelAndrews" class="home__link" target="_blank">
+                    <i class='bx bxl-github' ></i>
+                </a>
+
+                <a href="mailto:raphaelandrews95@gmail.com" class="home__link" target="_blank">
+                    <i class='bx bxl-gmail' ></i>
+                </a>
+            </div>
+
+            <div class="header__info">
+                <a href="#home"><img src="./assets/img/Logo.svg" alt="Raphael Logo" class="nav__img"></a>
+            </div>
         </header>
 
         <!--=============== MAIN ===============-->
@@ -50,35 +94,60 @@
             <!--=============== HOME ===============-->
             <section class="home" id="home">
                 <div class="home__box">
-                    <div class="home__title">
-                        <span class="home__span">Raphael Andrews</span>
-                        <h1 class="home__name">Desenvolvedor<br>Front-End</h1>
-                    </div>
-
-                    <div class="home__links">
-                        <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="home__link" target="_blank">
-                            <i class='bx bxl-whatsapp'></i>
-                        </a>
-
-                        <a href="https://www.linkedin.com/in/raphael-andrews/" class="home__link" target="_blank">
-                            <i class='bx bxl-linkedin' ></i>
-                        </a>
-
-                        <a href="https://github.com/RaphaelAndrews" class="home__link" target="_blank">
-                            <i class='bx bxl-github' ></i>
-                        </a>
-
-                        <a href="mailto:raphaelandrews95@gmail.com" class="home__link" target="_blank">
-                            <i class='bx bxl-gmail' ></i>
-                        </a>
-                    </div>
+                    <h1 class="home__name">Olá! Eu sou<br>Raphael Andrews<br><span class="home__name___span">Desenvolvedor Front-End</span></h1>
                     
-                    <a href="#projects"><span class="home__scroll"></span></a>
-                </div>      
+                    <div>
+                        <a href="#contact" class="home__contact">Contate-me</a>
+                    </div>                                        
+                </div>
+
+                <div>
+                    <img src="./assets/img/FotoBackground-6.jpg" class="home__background" alt="Background Image">
+                </div>
+                
+                <div class="home__wrapper">
+                    <div class="home__scroll-box">
+                        <a href="#projects"><span class="home__scroll"></span></a>
+                        <span class="home__wrapper___scroll">SCROLL DOWN</span>
+                    </div>
+
+                    <nav class="home__nav">
+                        <ul class="home__nav___list">
+                            <li class="nav__link"><a href="#home">Home</a></li>
+                            <li class="nav__link"><a href="#about">Sobre</a></li>
+                            <li class="nav__link"><a href="#cv">CV</a></li>
+                            <li class="nav__link"><a href="#skills">Skills</a></li>
+                            <li class="nav__link"><a href="#projects">Projetos</a></li>
+                        </ul>
+                    </nav>
+
+                    <div class="home__mail">
+                        <a href="#home"><i class='bx bxl-gmail header__mail___link'></i></a>
+                    </div>
+                </div>               
             </section>
 
-            <a href="#home" class="scroll__top" id="scroll__top"><i class='bx bx-chevrons-up scroll__icon'></i></a>
+            <section class="about" id="about">
+                <div class="about__box">
+                    <div class="about__img">
+                        <img src="./assets/img/FotoBackground-1.jpg" alt="">
+                    </div>
 
+                    <div class="about__info">
+                        <h5 class="box__span"><span>Sobre Mim</span></h5>
+                        <h2 class="about__title">Desenvolvedor Front End Junior que cria websites criativos</h2>
+                        <p class="about__text">Olá, sou um estudante de sistemas para internet que está em busca de sua primeira experiência
+                            profissional como estagiário ou desenvolvedor júnior.
+
+                            Nos próximos tópicos você poderá ver quais tecnologias eu estudo e possuo conhecimento, como
+                            também ver os projetos que uso pra treinar minhas habilidades.
+
+                            Inicei meus estudos com foco em Front-End, mas hoje busco também me aventurar um pouco com
+                            Java.</p>
+                    </div>
+                </div>
+            </section>
+            
             <section class="projects" id="projects">
                 <div class="">
                     <div class="projects__title">
