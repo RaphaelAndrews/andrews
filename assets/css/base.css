@@ -2,7 +2,9 @@
 
 * {
     box-sizing: border-box;
-}
+    padding: 0;
+    margin: 0;
+  }
 
 html {
     scroll-behavior: smooth;
@@ -26,12 +28,10 @@ h4 {
 
 body {
     font-family: var(--first-font);
-    background-color: hsl(230, 6%, 10%);
-    color: var(--second-color);
     font-size: var(--normal-font-size);
-    font-family: var(--first-font);
-    font-weight: var(--font-extrabold);
-    transition: .4s; /* Animação Light mode */
+    font-weight: var(--font-bold);
+    color: var(--second-color);
+    background-color: var(--body-color);
 }
 
 ul {
@@ -40,6 +40,7 @@ ul {
   
 a {
     text-decoration: none;
+    color: var(--second-color);
 }
 
 button {
@@ -53,19 +54,7 @@ img {
     height: auto;
 }
 
-
-/*========== Variáveis Light Theme ==========*/
-
-/*========== 
-   Mudanças de cor em algumas partes do site no ligth theme
-==========*/
-
-/*=============== Classes Reutilizáveis ===============*/
-
-.container {
-
-}
-
+/*=============== CLASSES REUTILIZÁVEIS ===============*/
 .main {
     overflow: clip;
 }
@@ -73,17 +62,17 @@ img {
 /*=============== SCROLL TOP ===============*/
 .scroll__top{
     position: fixed;
-    bottom: 16px;
-    right: 16px;
+    bottom: 1rem;
+    right: 1rem;
     z-index: var(--z-fixed);
 }
 
 .scroll__icon {
-    font-size: 1.5rem;
-    background-color: var(--second-color);
+    font-size: var(--h3-font-size);
+    background-color: var(--first-color);
     border-radius: 50%;
     padding: .5rem;
-    color: var(--first-color);
+    color: var(--second-color);
 }
 
 /*=============== SCROLL ===============*/
@@ -103,13 +92,13 @@ img {
 }
 
 /*=============== RESPONSIVE ===============*/
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     .scroll__top {
-        bottom: 2rem;
-        right: 2rem;
+        bottom: 1.5rem;
+        right: 1.5rem;
     }
 
     .scroll__icon {
-        font-size: 3rem;
+        padding: .75rem;
     }
 }

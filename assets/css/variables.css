@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@300;400;500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800;900&display=swap');
 
 :root {
     /*========== Colors ==========*/
@@ -8,28 +7,44 @@
             Orange: hsl(12, 100%, 50%)  
             Blue: hsl(211, 100%, 48%)  
             Cyan: hsl(170, 90%, 43%) 
+            Purple: hsl(250, 66%, 75%)
+            Teal: hsl(174, 63%, 62%)
+            Red: hsl(342, 100%, 50%) 
+            Red: hsl(348, 100%, 50%)
+            Blue: hsl(207, 90%, 72%)
+            Pink: hsl(356, 66%, 75%)
+            Yellow: hsl(46, 96%, 55%)
+            Yellow: hsl(41, 100%, 50%)
+            Black: hsl(0, 0%, 13%)
+            Grey: hsl(0, 0%, 38%)
     */
 
-    --first-hue: 170;
-    --sat: 90%;
-    --lig: 43%;
+    --first-hue: 41;
+    --sat: 100%;
+    --lig: 50%;
 
     --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --second-color: hsl(0, 0%, 97%);
-    --alternative-color: hsl(230, 6%, 18%);
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 46%); /* -4% */
+    --second-color: hsl(255, 100%, 100%);
+    --alternative-color: hsl(0, 0%, 13%);
+    --overlay-color: hsl(0, 0%, 17%);
+    --text-color: hsl(0, 0%, 38%);
+    --local-color: hsl(0, 0%, 55%);
+    --body-color: hsl(0, 0%, 98%);
     
     /*========== Font and typography ==========*/
-    /*font-family: 'Poppins', sans-serif;
-    font-family: 'IBM Plex Mono', monospace;*/
+    /*font-family: 'IBM Plex Mono', monospace;
+    font-family: 'Poppins', sans-serif;*/
 
-    --first-font: 'Poppins', sans-serif;
-    --second-font: 
-    --h1-font-size: 2.25rem;
+    --first-font: 'IBM Plex Mono', monospace;
+    --second-font: 'Poppins', sans-serif;
+    --h1-font-size: 2rem;
     --h2-font-size: 1.75rem;
-    --h3-font-size: 1.25rem;
-    --h4-font-size: 1.125rem;
-    --normal-font-size: 1rem;
-    --tiny-font-size: .75rem;
+    --h3-font-size: 1.5rem;
+    --h4-font-size: 1.25rem;
+    --h5-font-size: 1rem;
+    --normal-font-size: .75rem;
+    --tiny-font-size: .625rem;
 
     /*========== Font weight ==========*/
     --font-regular: 400;
@@ -40,39 +55,31 @@
     --font-black: 900;
 
     /*========== z index ==========*/
-    --z-asset: -1;
+    --z-after: -1;
+    --z-img: 1;
     --z-fixed: 10;
     --z-menu: 100;
 }
 
 /*=============== RESPONSIVE ===============*/
-@media screen and (max-width: 320px) {
-    .nav__menu {
-        padding: 1rem 1.5rem;
-    }
-}
-
-@media screen and (min-width: 780px) {
+@media screen and (min-width: 768px) {
     :root {
-        --header-height: 4.5rem;
-
-        --h1-font-size: 4rem;
-        --h2-font-size: 3rem;
-        --h3-font-size: 2rem;
-        --h4-font-size: 1.5rem;
-        --normal-font-size: 1.25rem;
-        --tiny-font-size: 1rem;
+        --h1-font-size: 2.75rem;
+        --h2-font-size: 2.5rem;
+        --h3-font-size: 1.75rem;
+        --normal-font-size: 1rem;
+        --tiny-font-size: .75rem;
     }
 }
 
 @media screen and (min-width: 1440px) {
     :root {
-        --h1-font-size: 3.125rem;
-        --h2-font-size: 2rem;
-        --h3-font-size: 3rem;
-        --h4-font-size: 2.25rem;
-        --normal-font-size: 1rem;
-        --tiny-font-size: .625rem;
-        --nav-font-size: 1.25rem;
+        --h1-font-size: 3.25rem;
+        --h2-font-size: 2.75rem;
+        --h3-font-size: 2rem;
+        --h4-font-size: 1.5rem;
+        --h5-font-size: 1.25rem;
+        --normal-font-size: 1.25rem;
+        --tiny-font-size: 1rem;
     }
 }

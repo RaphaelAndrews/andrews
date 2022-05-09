@@ -2,42 +2,48 @@
 @import 'base.css';
 
 .footer {
-    padding: 2.5rem 0;
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    gap: 2rem;    
+    display: flex;
+    flex-direction: column;
+    gap: 3rem;
+    place-items: center;
+    padding: 4.5rem 0 1rem;
+    background-color: var(--alternative-color);
 }
 
 .footer__links {
     display: flex;
-    gap: 1.5rem;
-    font-size: 1.5rem;
+    gap: 1.25rem;
 }
 
 .footer__link {
-    color: var(--alternative-color);
+    font-size: var(--h4-font-size);
     display: flex;
     width: max-content;
-    border-radius: .25rem;
-    padding: .25rem;
+    border-radius: .5rem;
+    padding: .75rem;
+    background-color: var(--first-color); 
 }
 
 .footer__link:hover {
-    color: var(--alternative-color);
-    background-color: var(--second-color);
+    border-radius: 1rem;
+    background-color: var(--first-color-alt);
+    transition: .3s;
 }
 
 .footer__info {
     display: grid;
-    gap: .5rem;
-    font-size: var(--tiny-font-size);
-    font-weight: var(--font-regular);
-    color: var(--alternative-color);
+    text-align: center;
+    gap: 0.5rem;
+    font-weight: var(--font-semibold);
+    color: var(--text-color);
 }
 
-@media screen and (min-width: 1440px) {
+/*=============== RESPONSIVE ===============*/
+@media screen and (min-width: 768px) {
     .footer {
-        gap: 3rem;
+        padding-bottom: 1.5rem;
+    }
+    .footer__links {
+        gap: 1.5rem;
     }
 }
