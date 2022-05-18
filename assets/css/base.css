@@ -29,7 +29,7 @@ h4 {
 body {
     font-family: var(--first-font);
     font-size: var(--normal-font-size);
-    font-weight: var(--font-bold);
+    font-weight: var(--font-semibold);
     color: var(--second-color);
     background-color: var(--body-color);
 }
@@ -59,6 +59,10 @@ img {
     overflow: clip;
 }
 
+.hide {
+    opacity: 0;
+}
+
 /*=============== SCROLL TOP ===============*/
 .scroll__top{
     position: fixed;
@@ -72,7 +76,7 @@ img {
     background-color: var(--first-color);
     border-radius: 50%;
     padding: .5rem;
-    color: var(--second-color);
+    color: var(--body-color);
 }
 
 /*=============== SCROLL ===============*/
@@ -90,6 +94,28 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--first-hue), 0%, 20%);
 }
+
+/*=============== THEME ===============*/
+.change-theme {
+    font-size: 1.25rem;
+    cursor: pointer;
+    transition: .3s;
+  }
+  
+.change-theme:hover {
+    color: var(--first-color);
+}
+
+/*========== Variables Light theme ==========*/
+body.light-theme {
+    --body-color: hsl(0, 0%, 0%);
+    --first-color: hsl(0, 0%, 100%);
+}
+
+.light-theme .central {
+    display: inherit;
+}
+
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 768px) {

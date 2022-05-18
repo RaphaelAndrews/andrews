@@ -12,12 +12,14 @@
         <link rel="stylesheet" href="./assets/css/base.css">
         <link rel="stylesheet" href="./assets/css/variables.css">
         <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./assets/css/central.css">
+        <link rel="stylesheet" href="./assets/css/timer.css">
         
         <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
 
         <link href='https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css' rel='stylesheet'>
 
-        <link rel="shortcut icon" href="./assets/img/Logo.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="./assets/img/logo-orange.svg" type="image/x-icon">
 
         <title>Andrews.Me</title>
     </head>
@@ -28,7 +30,7 @@
             <div class="header__box">
                 <a href="#home">
                     <div class="header__logo">
-                        <img src="./assets/img/Logo-1.svg" alt="Raphael Logo" class="header__img">
+                        <img src="./assets/img/logo-orange.svg" alt="Raphael Logo" class="header__img">
                     </div>
                 </a>
 
@@ -71,6 +73,9 @@
                         <i class='bx bxl-gmail' ></i>
                     </a>
                 </div>
+
+                <div class="tracks__overlay"></div>
+                <div class="tracks__overlay2"></div>
             </nav>
 
             <div class="header__links">
@@ -97,16 +102,17 @@
             <!--=============== HOME ===============-->
             <section class="home" id="home">
                 <div class="home__box">
-                    <h1 class="home__title">Olá! Eu sou<br class="home__br"> Raphael Andrews<br><span class="home__span">Desenvolvedor<br class="home__br"> Front-End</span></h1>  
-
+                    <span>Olá</span>
+                    <h1 class="home__title">ANDREWS</h1>
+                    <h2 class="home__subtitle">DESENVOLVEDOR FRONT-END</h2>
                 </div>
 
-                <div class="home__background"></div>
-
                 <a href="#about" class="home__scroll-box">
-                    <span class="home__scroll"></span>
-                    <span class="home__scroll___span">DESLIZAR</span>
-                </a>             
+                    <span class="home__scroll">
+                      <i class='bx bx-chevron-down arrow__1'></i>
+                      <i class='bx bx-chevron-down arrow__2'></i>
+                      <i class='bx bx-chevron-down arrow__3'></i>
+                  </a>            
             </section>
 
             <a href="#home" class="scroll__top" id="scroll__top"><i class='bx bx-chevrons-up scroll__icon'></i></a>
@@ -200,7 +206,116 @@
                     </article>
                 </div>
             </section>
+
+            <section class="central" id="central">  
+                <h2 class="central__title">Central</h2>
+                <div class="central__locks">            
+                    <div class="central__btns">
+                        <h5 class="locks__1" id="locks-1">Header</h5>
+                        <h5 class="locks__2" id="locks-2">Home</h5>
+                        <h5 class="locks__3" id="locks-3">About</h5>
+                        <h5 class="locks__4" id="locks-4">Projects</h5>
+                    </div>
+
+                    <div class="central__display">
+                        <div class="locks__line-1"></div>
+                        <div class="locks__line-2"></div>
+                        <div class="locks__line-3"></div>
+
+                        <div class="external1">
+                            <div class="external__locks-1">
+                                <div class="locks" id="lock-1">
+                                    <div class="internal__locks-1"></div>
+                                </div>
+                            </div>
+
+                            <div class="external__locks-1">
+                                <div class="locks" id="lock-2">
+                                    <div class="internal__locks-1"></div>
+                                </div>
+                            </div>
+                        </div>
+
+
+                        <div class="external2">
+                            <div class="external__locks-2">
+                                <div class="locks" id="lock-3">
+                                    <div class="internal__locks-2"></div>
+                                </div>
+                            </div>
+                            
+                            <div class="external__locks-2">
+                                <div class="locks" id="lock-4">
+                                    <div class="internal__locks-2"></div>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+
+                <div class="central__energy">
+                    <h5 class="energy__main">SISTEMA PRINCIPAL DE ENERGIA</h5>
+
+                    <div class="energy__level">
+                        <span >NÍVEL DE ENERGIA</span>
+                        <div class="tracks" id="tracks"></div>
+                    </div>
+                </div>
+
+                <div class="central__timer">
+                    <div class="timer">
+                        <div class="time">
+                            <span class="minute-second-area">
+                            <span class="minute" id="minute">00</span>:<span class="second" id="second">00</span><span class="millisecond-area">:<span class="millisecond" id="millisecond">00</span></span>
+                            </span>
+                        </div>
+                    
+                        <div class="control">
+                            <button class="active__control control__button" id="start-button">
+                            <div class="control__text">START</div>
+                            <div class="control__click"></div>
+                            </button>
+                    
+                            <button class="control__button" id="stop-button">
+                            <div class="control__text">STOP</div>
+                            <div class="control__click"></div>
+                            </button>
+                    
+                            <button class="active__control control__button" id="reset-button">
+                            <div class="control__text">RESET</div>
+                            <div class="control__click"></div>
+                            </button>
+                        </div>
+                    </div>
+
+                    <div class="central__systems">
+                        <div class="central__internal hide" id="internal">
+                            <div class="internal__box">
+                                <div class="internal__symbol">内部</div>
+                                <div class="internal__text">INTERNAL</div>
+                            </div>
+                            <div class="tracks__internal"></div> 
+                        </div>
+
+                        <div class="central__main">
+                            <div class="central__box">
+                                <div class="central__symbol">主なエネルギー供給システム</div>
+                                <div class="central__text">MAIN ENERGY SUPPLY SYSTEM</div>
+                            </div>
+                        </div>
+
+                        <div class="central__internal" id="external">
+                            <div class="internal__box">
+                                <div class="internal__symbol">外部</div>
+                                <div class="internal__text">EXTERNAL</div>
+                            </div>
+                            <div class="tracks__internal"></div> 
+                        </div>
+                    </div>
+                </div>
+            </section>
         </main>
+
+    
 
         <!--=============== FOOTER ===============-->
         <footer class="footer" id="footer">
@@ -234,6 +349,8 @@
         <script src="./assets/js/scrollreveal.min.js"></script>
         
         <script src="./assets/js/swiper-bundle.min.js"></script>
+
+        <script src="./assets/js/timer.js"></script>
 
         <script src="./assets/js/main.js"></script>
     </body>

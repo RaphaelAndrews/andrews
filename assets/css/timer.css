@@ -1,0 +1,157 @@
+@import 'variables.css';
+@import 'base.css';
+
+button.disabled {
+  color: hsla(0, 0%, 100%, 0.5);
+}
+
+.central__timer {
+    display: flex;
+    flex-direction: column;
+}
+
+.timer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: black;
+    color: white;
+}
+
+.time {
+    display: flex;
+}
+
+.minute-second-area {
+    font-family: var(--fourth-font);
+    font-weight: var(--font-semibold);
+    font-size: 4rem;
+    flex-shrink: 0;
+    flex-grow: 1;
+    text-align: center;
+    color: hsl(40, 100%, 50%);
+    text-shadow: 0 0 2px hsla(0, 100%, 50%, 1);
+    margin: 1rem 0;
+    transform: scaleY(1.5);
+}
+
+.millisecond-area {
+    font-size: 2.5rem;
+}
+
+.minute,
+.second,
+.millisecond {
+    font-family: var(--third-font);
+}
+
+.control {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    column-gap: 1rem;
+}
+
+.control__button {
+    display: grid;
+    font-size: 1rem;
+    border: 1px solid  hsl(40, 100%, 50%);
+    border-radius: .125rem;
+    background-color: transparent;
+    cursor: pointer;
+}
+
+.control__text {
+    font-family: var(--second-font);
+    font-weight: var(--font-semibold);
+    color: hsl(40, 100%, 50%);
+    margin: .25rem;
+    text-shadow: 0 0 2px hsla(0, 100%, 50%, 1);
+}
+
+.control__click {
+    height: 1rem;
+    margin-bottom: .25rem;
+}
+
+.active__control .control__click {
+    background-color: hsl(0, 100%, 50%);
+}
+
+.active__control:hover .control__click {
+    background-color: hsla(0, 0%, 100%, 0.5);
+}
+
+.central__systems {
+    display: grid;
+    gap: .5rem;
+}
+
+.central__internal,
+.central__main {
+    width: 154px;
+}
+
+.central__internal {
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid hsl(40, 100%, 50%);
+    margin: 0 auto;
+    padding: 0.25rem;
+}
+
+.internal__box {
+    display: grid;
+    gap: .25rem;
+    color: hsl(40, 100%, 50%);
+}
+
+.internal__symbol {
+    font-size: 3rem;
+    text-shadow: 0 0 2px hsla(0, 100%, 50%, 1);
+}
+
+.internal__text {
+    font-size: 1.125rem;
+    font-weight: var(--font-semibold);
+    text-shadow: 0 0 2px hsla(0, 100%, 50%, 1);
+}
+
+.tracks__internal {
+    width: 40px;
+    height: 70px;
+    background-image: repeating-linear-gradient(
+        -45deg,
+        rgba(255, 0, 0, .8) calc(-1 * 3px),
+        hsl(355, 100%, 57%) 0,
+        hsl(355, 100%, 57%) calc(15px - 3px / 2),
+        rgba(255, 0, 0, .8) calc(15px + 3px / 2),
+        transparent calc(15px + 3px / 2),
+        transparent calc(2 * 15px),
+        rgba(255, 0, 0, .8) calc(2 * 15px - 3px)
+    );
+}
+
+.central__main {
+    display: flex;
+    gap: 0.5rem;
+    border: 1px solid hsl(40, 100%, 50%);
+    margin: 0 auto;
+    padding: 0.25rem;
+}
+
+.central__box {
+    display: grid;
+    color: hsl(40, 100%, 50%);
+    gap: .25rem;
+}
+
+.central__symbol {
+    font-size: .69rem;
+    text-shadow: 0 0 1px hsla(0, 100%, 50%, 1);
+}
+
+.central__text {
+    font-size: .53rem;
+    font-weight: var(--font-semibold);
+    text-shadow: 0 0 1px hsla(0, 100%, 50%, 1);
+}

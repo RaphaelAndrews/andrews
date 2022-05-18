@@ -7,7 +7,7 @@
     gap: 3rem;
     place-items: center;
     padding: 4.5rem 0 1rem;
-    background-color: var(--alternative-color);
+    background-color: var(--second-color);
 }
 
 .footer__links {
@@ -21,7 +21,8 @@
     width: max-content;
     border-radius: .5rem;
     padding: .75rem;
-    background-color: var(--first-color); 
+    background-color: var(--first-color);
+    color: var(--body-color); 
 }
 
 .footer__link:hover {
@@ -34,8 +35,8 @@
     display: grid;
     text-align: center;
     gap: 0.5rem;
-    font-weight: var(--font-semibold);
-    color: var(--text-color);
+    font-weight: var(--font-medium);
+    color: var(--body-color);
 }
 
 /*=============== RESPONSIVE ===============*/

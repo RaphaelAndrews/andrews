@@ -7,11 +7,11 @@
   max-width: 1440px;
   margin: 0 auto;
   align-content: center;
-  padding: 6rem 0 3rem;
+  padding: 6rem 0 1rem;
 }
 
 .projects__title {
-  color: var(--alternative-color);
+  color: var(--first-color);
   display: flex;
   justify-content: center;
 }
@@ -29,7 +29,7 @@
   color: var(--alternative-color);
   padding: 0.25rem 0.75rem;
   font-size: var(--h5-font-size);
-  font-weight: var(--font-bold);
+  font-weight: var(--font-semibold);
   border-radius: 0.5rem;
   margin-bottom: 0.75rem;
 }
@@ -41,7 +41,7 @@
 /* Active*/
 .active-project {
   background-color: var(--first-color);
-  color: var(--second-color) !important;
+  color: var(--body-color) !important;
 }
 
 .active-project:hover {
@@ -74,7 +74,7 @@
   right: 0;
   bottom: 0;
   height: 100%;
-  background: hsla(0, 0%, 0%, 0.4);
+  background: hsla(0, 0%, 0%, 0.7);
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -85,12 +85,13 @@
 
 .projects__overlay___title{
     font-weight: var(--font-bold);
+    color: var(--body-color);
     margin-bottom: .25rem;
 }
   
 .projects__overlay___subtitle {
   font-family: var(--second-font);
-  font-weight: var(--font-semibold);
+  font-weight: var(--font-bold);
   letter-spacing: 2px;
   text-transform: uppercase;
   color: var(--first-color);
