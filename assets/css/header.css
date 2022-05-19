@@ -172,6 +172,8 @@
 
 .header__links,
 .header__info,
+.header__img-b,
+.black,
 .hidden {
     display: none;
 }

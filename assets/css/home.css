@@ -109,7 +109,8 @@
     color: var(--first-color);
 }
 
-.home__nav {
+.home__nav,
+.home__box-b {
     display: none;
 }
 

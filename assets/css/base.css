@@ -26,6 +26,10 @@ h4 {
     font-size: var(--h4-font-size);
 }
 
+h5 {
+    font-size: var(--h5-font-size);
+}
+
 body {
     font-family: var(--first-font);
     font-size: var(--normal-font-size);
@@ -94,28 +98,6 @@ img {
 ::-webkit-scrollbar-thumb:hover {
     background-color: hsl(var(--first-hue), 0%, 20%);
 }
-
-/*=============== THEME ===============*/
-.change-theme {
-    font-size: 1.25rem;
-    cursor: pointer;
-    transition: .3s;
-  }
-  
-.change-theme:hover {
-    color: var(--first-color);
-}
-
-/*========== Variables Light theme ==========*/
-body.light-theme {
-    --body-color: hsl(0, 0%, 0%);
-    --first-color: hsl(0, 0%, 100%);
-}
-
-.light-theme .central {
-    display: inherit;
-}
-
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 768px) {
