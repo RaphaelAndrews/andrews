@@ -57,6 +57,7 @@
 
 .projects__card {
   position: relative;
+  display: flex;
   max-width: 355px;
   overflow: hidden;
 }
@@ -109,8 +110,12 @@
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 1024px) {
-    .projects__overlay {
-      top: inherit;
-      bottom: -100%;
-    }
+  .projects__overlay {
+    top: inherit;
+    bottom: -100%;
+  }
+
+  .projects__overlay___subtitle {
+    font-size: 1rem;
+  }
 }
