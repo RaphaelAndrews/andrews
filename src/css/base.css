@@ -34,7 +34,7 @@ body {
     font-family: var(--first-font);
     font-size: var(--normal-font-size);
     font-weight: var(--font-semibold);
-    color: var(--second-color);
+    color: var(--first-color);
     background-color: var(--body-color);
 }
 
@@ -44,7 +44,7 @@ ul {
   
 a {
     text-decoration: none;
-    color: var(--second-color);
+    color: var(--first-color);
 }
 
 button {
@@ -67,20 +67,27 @@ img {
     opacity: 0;
 }
 
+.container {
+    max-width: 1230px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.background__footer {
+    background-color: var(--third-color);
+}
+
 /*=============== SCROLL TOP ===============*/
 .scroll__top{
     position: fixed;
-    bottom: 1rem;
-    right: 1rem;
+    bottom: 1.5rem;
+    right: 1.5rem;
     z-index: var(--z-fixed);
 }
 
 .scroll__icon {
-    font-size: var(--h3-font-size);
-    background-color: var(--first-color);
-    border-radius: 50%;
-    padding: .5rem;
-    color: var(--body-color);
+    font-size: 3rem;
+    color: var(--fifth-color);
 }
 
 /*=============== SCROLL ===============*/

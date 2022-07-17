@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800;900&family=Ubuntu:wght@400;500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
 
 :root {
     /*========== Colors ==========*/
@@ -20,25 +20,28 @@
             Grey: hsl(0, 0%, 38%)
     */
 
-    --first-hue: 21;
-    --sat: 100%;
-    --lig: 50%;
-    --second-hue: 0;
+    --hue: 0;
+    --sat: 0%;
+    --lig: 73%;
 
-    --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 46%); /* -4% */
-    --second-color: hsl(232, 17%, 9%);
-    --third-color: hsl(var(--second-hue), var(--sat), 1%);
-    --alternative-color: hsl(300, 1%, 70%);
-    --body-color: hsl(var(--second-hue), 0%, 100%);
+    --first-color: hsl(var(--hue), var(--sat), var(--lig));
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 52%); 
+    --second-color: hsl(13, 100%, 50%);
+    --third-color: hsl(var(--hue), var(--sat), 8%);
+    --fourth-color: hsl(var(--hue), var(--sat), 37%);
+    --fifth-color: hsl(var(--hue), var(--sat), 67%);
+    --alternative-color: hsl(var(--hue), var(--sat)%, 100%);
+    --assets-color: hsl(var(--hue), var(--sat), 1%);
+    --body-color: hsl(var(--hue), var(--sat), 7%);
     
     /*========== Font and typography ==========*/
-    /*font-family: 'Poppins', sans-serif;
-    font-family: 'Ubuntu', sans-serif;*/
+    /*font-family: 'Inter', sans-serif;
+    font-family: 'Source Sans Pro', sans-serif;*/
 
-    --first-font: 'Poppins', sans-serif;
-    --second-font: 'Ubuntu', sans-serif;
+    --first-font: 'Inter', sans-serif;
+    --second-font: 'Source Sans Pro', sans-serif;
     --h1-font-size: 3rem;
+    --nav-font-size: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
     --h4-font-size: 1.25rem;
@@ -47,6 +50,7 @@
     --tiny-font-size: .625rem;
 
     /*========== Font weight ==========*/
+    --font-light: 300;
     --font-regular: 400;
     --font-medium: 500;
     --font-semibold: 600;
@@ -63,23 +67,25 @@
 
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 768px) {
-    :root {
+    /*:root {
         --h1-font-size: 2.75rem;
         --h2-font-size: 2.5rem;
         --h3-font-size: 1.75rem;
         --normal-font-size: 1rem;
         --tiny-font-size: .75rem;
+    }*/
+}
+
+@media screen and (min-width: 962px) {
+    :root {
+        --nav-font-size: 1rem;
     }
 }
 
+
+
 @media screen and (min-width: 1440px) {
     :root {
-        --h1-font-size: 3.25rem;
-        --h2-font-size: 2.75rem;
-        --h3-font-size: 2rem;
-        --h4-font-size: 1.5rem;
-        --h5-font-size: 1.25rem;
-        --normal-font-size: 1.25rem;
-        --tiny-font-size: 1rem;
+        
     }
 }

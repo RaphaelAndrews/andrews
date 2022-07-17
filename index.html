@@ -5,19 +5,19 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-        <link rel="stylesheet" href="./assets/css/variables.css">
-        <link rel="stylesheet" href="./assets/css/base.css">
-        <link rel="stylesheet" href="./assets/css/header.css">
-        <link rel="stylesheet" href="./assets/css/home.css">
-        <link rel="stylesheet" href="./assets/css/about.css">
-        <link rel="stylesheet" href="./assets/css/projects.css">
-        <link rel="stylesheet" href="./assets/css/footer.css">
+        <link rel="stylesheet" href="./src/css/variables.css">
+        <link rel="stylesheet" href="./src/css/base.css">
+        <link rel="stylesheet" href="./src/css/header.css">
+        <link rel="stylesheet" href="./src/css/home.css">
+        <link rel="stylesheet" href="./src/css/about.css">
+        <link rel="stylesheet" href="./src/css/projects.css">
+        <link rel="stylesheet" href="./src/css/footer.css">
         
-        <link rel="stylesheet" href="./assets/css/swiper-bundle.min.css">
+        <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
 
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
         
-        <link rel="shortcut icon" href="./assets/img/logo-orange.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="./src/assets/img/logo-site.svg" type="image/x-icon">
 
         <title>Andrews.Me</title>
     </head>
@@ -28,18 +28,16 @@
             <div class="header__box">
                 <a href="#home">
                     <div class="header__logo">
-                        <img src="./assets/img/logo-orange.svg" alt="Raphael Logo" class="header__img">
+                        <img src="./src/assets/img/logo-site.svg" alt="Raphael Logo" class="header__img">
                     </div>
                 </a>
 
                 <div class="header__toggle" id="header-toggle">
                     <i class='bx bx-menu header__drop' id="toggle-button" ></i>
-
-                    <div class="header__menu">MENU</div>
                 </div>
             </div>
 
-            <nav class="header__overlay overlay__transition" id="header-overlay">                
+            <nav class="header__overlay overlay__transition" id="header-overlay" >                
                 <ul class="header__nav___list">
                     <li class="nav__item">
                         <a href="#home" class="nav__link active">Home</a>
@@ -72,27 +70,24 @@
                     </a>
                 </div>
 
-                <div class="tracks__overlay"></div>
-                <div class="tracks__overlay2"></div>
-            </nav>
-
-            <div class="header__links">
-                <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="header__link" target="_blank">
-                    <i class='bx bxl-whatsapp'></i>
-                </a>
-
-                <a href="https://www.linkedin.com/in/raphael-andrews/" class="header__link" target="_blank">
-                    <i class='bx bxl-linkedin' ></i>
-                </a>
-
-                <a href="https://github.com/RaphaelAndrews" class="header__link" target="_blank">
-                    <i class='bx bxl-github' ></i>
-                </a>
-
-                <a href="mailto:raphaelandrews95@gmail.com" class="header__link" target="_blank">
-                    <i class='bx bxl-gmail' ></i>
-                </a>
-            </div>
+                <div class="header__links">
+                    <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="header__link" target="_blank">
+                        <i class='bx bxl-whatsapp'></i>
+                    </a>
+    
+                    <a href="https://www.linkedin.com/in/raphael-andrews/" class="header__link" target="_blank">
+                        <i class='bx bxl-linkedin' ></i>
+                    </a>
+    
+                    <a href="https://github.com/RaphaelAndrews" class="header__link" target="_blank">
+                        <i class='bx bxl-github' ></i>
+                    </a>
+    
+                    <a href="mailto:raphaelandrews95@gmail.com" class="header__link" target="_blank">
+                        <i class='bx bxl-gmail' ></i>
+                    </a>
+                </div>
+            </nav>            
         </header>      
 
         <!--=============== MAIN ===============-->
@@ -118,7 +113,7 @@
             <section class="about" id="about">
                 <div class="about__box">                       
                     <div class="about__img">
-                        <img src="./assets/img/FotoBackground-7.png" class="about__img-img" alt="Desktop Image">
+                        <img src="./src/assets/img/FotoBackground-7.png" class="about__img-img" alt="Desktop Image">
                     </div>
 
                     <div class="about__info">
@@ -133,7 +128,7 @@
                             Inicei meus estudos com foco em Front-End, mas hoje busco também me aventurar um pouco com
                             Java.</p>
 
-                            <a download href="./assets/pdf/Currículo Raphael Andrews.pdf" class="about__cv">Download CV</a>
+                            <a download href="./src/assets/pdf/Currículo Raphael Andrews.pdf" class="about__cv">Download CV</a>
                     </div>
                 </div>
             </section>
@@ -153,7 +148,7 @@
                 <div class="projects__container">
                     <article class="projects__card mix html css">
                         <a href="https://raphaelandrews.github.io/Stats-Preview-Card/" target="_blank">
-                            <img src="./assets/img/stats-preview-card.png" alt="Stats Preview Card Challenge" class="projects__img">
+                            <img src="./src/assets/img/stats-preview-card.png" alt="Stats Preview Card Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">Stats Preview Card</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -163,7 +158,7 @@
 
                     <article class="projects__card mix html css">
                         <a href="https://raphaelandrews.github.io/NFT-Card/" target="_blank">
-                            <img src="./assets/img/nft-card.png" alt="NFT Card Challenge" class="projects__img">
+                            <img src="./src/assets/img/nft-card.png" alt="NFT Card Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">NFT Card Challenge</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -173,7 +168,7 @@
 
                     <article class="projects__card mix html css javascript">
                         <a href="https://raphaelandrews.github.io/Interactive-Rating/" target="_blank">
-                            <img src="./assets/img/interactive-rating.png" alt="Interactive Rating Challenge" class="projects__img">
+                            <img src="./src/assets/img/interactive-rating.png" alt="Interactive Rating Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">Interactive Rating Challenge</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -183,7 +178,7 @@
 
                     <article class="projects__card mix html tailwind">
                         <a href="https://raphaelandrews.github.io/Profile-Card-Component/" target="_blank">
-                            <img src="./assets/img/profile-card-component.png" alt="Profile Card Component Challenge" class="projects__img">
+                            <img src="./src/assets/img/profile-card-component.png" alt="Profile Card Component Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">Profile Card Component</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -193,7 +188,7 @@
 
                     <article class="projects__card mix html css">
                         <a href="https://raphaelandrews.github.io/Order-Summary/" target="_blank">
-                            <img src="./assets/img/order-summary.png" alt="Order Summary Challenge" class="projects__img">
+                            <img src="./src/assets/img/order-summary.png" alt="Order Summary Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">Order Summary Challenge</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -203,7 +198,7 @@
 
                     <article class="projects__card mix html css">
                         <a href="https://raphaelandrews.github.io/QR-Code/" target="_blank">
-                            <img src="./assets/img/qr-code.png" alt="QR Code Challenge" class="projects__img">
+                            <img src="./src/assets/img/qr-code.png" alt="QR Code Challenge" class="projects__img">
                             <div class="projects__overlay">
                                 <h4 class="projects__overlay___title">QR Code Challenge</h4>
                                 <span class="projects__overlay___subtitle">Ver Projeto</span>
@@ -212,41 +207,104 @@
                     </article>
                 </div>
             </section>
+
+            <!--=============== CONTACT ===============-->
+            <h4>Entre em contato</h4>
+                <form action="mailto: raphaelandrews95@gmail.com">
+                    Nome<br>
+                    <input type="text" name="username" 
+                        placeholder="Digite seu nome"><br><br>
+                    Mensagem<br>
+                    <input type="textarea" name="message" 
+                        rows="10" cols="30" 
+                        placeholder="Enter your message">
+                    <br><br>
+                    <input type="submit" value="Send Email">
+                </form>
         </main>
 
         <!--=============== FOOTER ===============-->
-        <footer class="footer" id="footer">
-            <div class="footer__links">
-                <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="footer__link" target="_blank">
-                    <i class='bx bxl-whatsapp'></i>
-                </a>
+        <footer class="background__footer" id="footer">
+            <div class="footer container">
+                <div class="footer__container">
+                    <div class="footer__1">
+                        <h2 class="footer__title">ANDREWS</h2>
 
-                <a href="https://www.linkedin.com/in/raphael-andrews/" class="footer__link" target="_blank">
-                    <i class='bx bxl-linkedin'></i>
-                </a>
+                        <nav>
+                            <ul class="footer__nav">
+                                <li class="footer__items">
+                                    <a href="#home" class="footer__item">Home</a>
+                                </li>
 
-                <a href="https://github.com/RaphaelAndrews" class="footer__link" target="_blank">
-                    <i class='bx bxl-github'></i>
-                </a>
+                                <li class="footer__items">
+                                    <a href="#about" class="footer__item">Sobre</a>
+                                </li>
 
-                <a href="mailto:raphaelandrews95@gmail.com" class="footer__link" target="_blank">
-                    <i class='bx bxl-gmail'></i>
-                </a>
-            </div>
+                                <li class="footer__items">
+                                    <a href="#projects" class="footer__item">Projetos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+                    
+                    <div class="footer__1">
+                        <h2 class="footer__title">ANDREWS</h2>
 
-            <div class="footer__info">
-                <p>Raphael Andrews</p>
-                <p>Desenvolvedor Front-End</p>
+                        <nav>
+                            <ul class="footer__nav">
+                                <li class="footer__items">
+                                    <a href="#home" class="footer__item">Home</a>
+                                </li>
+
+                                <li class="footer__items">
+                                    <a href="#about" class="footer__item">Sobre</a>
+                                </li>
+
+                                <li class="footer__items">
+                                    <a href="#projects" class="footer__item">Projetos</a>
+                                </li>
+                            </ul>
+                        </nav>
+                    </div>
+
+                    
+
+                    <div class="footer__2">
+                        <div class="footer__links">
+                            <a href="https://wa.me/5579988666446?text=Ol%C3%A1%21" class="footer__link" target="_blank">
+                                <i class='bx bxl-whatsapp'></i>
+                            </a>
+
+                            <a href="https://www.linkedin.com/in/raphael-andrews/" class="footer__link" target="_blank">
+                                <i class='bx bxl-linkedin'></i>
+                            </a>
+
+                            <a href="https://github.com/RaphaelAndrews" class="footer__link" target="_blank">
+                                <i class='bx bxl-github'></i>
+                            </a>
+
+                            <a href="mailto:raphaelandrews95@gmail.com" class="footer__link" target="_blank">
+                                <i class='bx bxl-gmail'></i>
+                            </a>
+                        </div>
+
+                        <button href="" class="footer__btn">Contato</button>
+                    </div>
+                </div>
+
+                <div class="footer__info">
+                    <p class="footer__text">Raphael Andrews | Desenvolvedor Front-End</p>
+                </div>
             </div>
         </footer>
 
         <!--=============== SCRIPTS ===============-->
-        <script src="./assets/js/mixitup.min.js"></script>
+        <script src="./src/js/mixitup.min.js"></script>
         
-        <script src="./assets/js/scrollreveal.min.js"></script>
+        <script src="./src/js/scrollreveal.min.js"></script>
         
-        <script src="./assets/js/swiper-bundle.min.js"></script>
+        <script src="./src/js/swiper-bundle.min.js"></script>
 
-        <script src="./assets/js/main.js"></script>
+        <script src="./src/js/main.js"></script>
     </body>
 </html>

@@ -94,7 +94,7 @@ function scrollFunction() {
 }
 
 /*=============== SCROLL REVEAL ANIMATION ===============*/
-const sr = ScrollReveal({
+/*const sr = ScrollReveal({
     origin: 'top',
     distance: '60px',
     duration: 2500,
@@ -107,4 +107,4 @@ sr.reveal(`.home__scroll-box, .home__scroll, .projects__container`, {delay: 900,
 sr.reveal(`.about__img`, {distance: '120px', origin: 'left'})
 sr.reveal(`.about__box`, {distance: '120px', origin: 'right'})
 sr.reveal(`.scroll__top, .scroll__icon, .header__links, .header__toggle`, {delay: 700, distance: '120px', origin: 'right'})
-sr.reveal(`.header__logo`, {delay: 700, distance: '120px', origin: 'left'})
+sr.reveal(`.header__logo`, {delay: 700, distance: '120px', origin: 'left'})*/
