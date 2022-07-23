@@ -45,12 +45,14 @@ ul {
 a {
     text-decoration: none;
     color: var(--first-color);
+    transition: .2s .1s;
 }
 
 button {
     cursor: pointer;
     border: none;
     outline: none;
+    transition: .3s .1s;
 }
 
 img {
@@ -68,13 +70,9 @@ img {
 }
 
 .container {
-    max-width: 1230px;
+    max-width: 1440px;
     margin-left: auto;
     margin-right: auto;
-}
-
-.background__footer {
-    background-color: var(--third-color);
 }
 
 /*=============== SCROLL TOP ===============*/
@@ -83,6 +81,7 @@ img {
     bottom: 1.5rem;
     right: 1.5rem;
     z-index: var(--z-fixed);
+    display: none;
 }
 
 .scroll__icon {

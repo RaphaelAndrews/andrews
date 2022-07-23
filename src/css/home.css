@@ -7,33 +7,30 @@
     align-items: center;
     justify-content: center;
     height: 100vh;
-    margin-bottom: -3rem;
+    padding-bottom: 10vh;
 }
 
 .home__box {
-    display: grid;
-    place-items: center;
+    display: flex;
+    flex-direction: column;
     position: absolute;
-    padding: 0 15px 0 15px;
-    top: 40%;
     text-align: center;
-    z-index: var(--z-img);
 }
 
 .home__title {
-    color: var(--body-color);
+    font-weight: var(--font-extrabold);
+    line-height: clamp(1.2, 1.3, 1.4);
 }
 
-.home__subtitle {
-    color: var(--first-color);
-    font-weight: var(--font-semibold);
-    line-height: 1.1;
+.home__span {
+    color: var(--second-color);
 }
 
 .home__scroll-box {
     position: absolute;
     bottom: 3rem;
     margin: 0 auto;
+    align-self: center;
 }
 
 .home__scroll {
@@ -91,48 +88,22 @@
     }
 }
 
-.home__nav {
-    position: fixed;
-    background-color: hsl(230, 6%, 12%);
-    height: 80px;
-    top: 0;
-    left: 80px;
-    right: 0;
-    display: flex;
-    place-items: center;
-    z-index: var(--z-menu);
-}
-
-.home__link:hover {
-    cursor: pointer;
-    color: var(--first-color);
-}
-
-.home__nav,
-.home__box-b {
-    display: none;
-}
-
 /*=============== RESPONSIVE ===============*/
 @media screen and (min-width: 768px) {
     .home {
-        margin-bottom: 0;
+        padding-bottom: 5vh;
     }
 
-    .home__box {
-        top: 35%;
+    .home__br {
+        display: none;
     }
 }
 
+@media screen and (min-width: 1024px) {
+
+}
+
 @media screen and (min-width: 1440px) {
-    .home__box {
-        top: 40%;
-    }
-
-    .home__title {
-        line-height: 80px;
-    } 
-
     .home__br {
        display: none;
     }

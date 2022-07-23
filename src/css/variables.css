@@ -1,4 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Source+Sans+Pro:ital,wght@0,300;0,400;0,600;0,700;0,900;1,300;1,400;1,600;1,700;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
     /*========== Colors ==========*/
@@ -22,25 +23,22 @@
 
     --hue: 0;
     --sat: 0%;
-    --lig: 73%;
+    --lig: 100%;
 
     --first-color: hsl(var(--hue), var(--sat), var(--lig));
-    --first-color-alt: hsl(var(--first-hue), var(--sat), 52%); 
-    --second-color: hsl(13, 100%, 50%);
-    --third-color: hsl(var(--hue), var(--sat), 8%);
-    --fourth-color: hsl(var(--hue), var(--sat), 37%);
-    --fifth-color: hsl(var(--hue), var(--sat), 67%);
-    --alternative-color: hsl(var(--hue), var(--sat)%, 100%);
-    --assets-color: hsl(var(--hue), var(--sat), 1%);
-    --body-color: hsl(var(--hue), var(--sat), 7%);
+    --first-color-alt: hsl(var(--first-hue), var(--sat), 96%); 
+    --second-color: hsl(350, 90%, 49%);
+    --third-color: hsl(200, 15%, 8%);
+    --alternative-color: hsl(var(--hue), var(--sat), 53%);
+    --body-color: hsl(var(--hue), var(--sat), 3%);
     
     /*========== Font and typography ==========*/
-    /*font-family: 'Inter', sans-serif;
-    font-family: 'Source Sans Pro', sans-serif;*/
+    /*font-family: 'Poppins', sans-serif;
+    font-family: 'DM Sans', sans-serif; */
 
-    --first-font: 'Inter', sans-serif;
-    --second-font: 'Source Sans Pro', sans-serif;
-    --h1-font-size: 3rem;
+    --first-font: 'Poppins', sans-serif;
+    --second-font: 'DM Sans', sans-serif;
+    --h1-font-size: clamp(1.75rem, 5vw, 3.75rem);
     --nav-font-size: 2rem;
     --h2-font-size: 1.75rem;
     --h3-font-size: 1.5rem;
@@ -82,10 +80,8 @@
     }
 }
 
-
-
 @media screen and (min-width: 1440px) {
     :root {
-        
+        --h5-font-size: 1.25rem;
     }
 }

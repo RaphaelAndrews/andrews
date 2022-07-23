@@ -10,27 +10,29 @@
         <link rel="stylesheet" href="./src/css/header.css">
         <link rel="stylesheet" href="./src/css/home.css">
         <link rel="stylesheet" href="./src/css/about.css">
+        <link rel="stylesheet" href="./src/css/featured.css">
         <link rel="stylesheet" href="./src/css/projects.css">
+        <link rel="stylesheet" href="./src/css/contact.css">
         <link rel="stylesheet" href="./src/css/footer.css">
         
         <link rel="stylesheet" href="./src/css/swiper-bundle.min.css">
 
         <link rel="stylesheet" href="https://unpkg.com/boxicons@2.1.1/css/boxicons.min.css">
         
-        <link rel="shortcut icon" href="./src/assets/img/logo-site.svg" type="image/x-icon">
+        <link rel="shortcut icon" href="./src/assets/img/logo-andrews.svg" type="image/x-icon">
 
-        <title>Andrews.Me</title>
+        <title>Andrews</title>
     </head>
     
     <body>
         <!--=============== HEADER ===============-->
         <header class="header" id="header">
             <div class="header__box">
-                <a href="#home">
-                    <div class="header__logo">
-                        <img src="./src/assets/img/logo-site.svg" alt="Raphael Logo" class="header__img">
-                    </div>
-                </a>
+                <div class="header__logo">
+                    <a href="home.html">
+                        <img src="./src/assets/img/logo-andrews.svg" alt="Raphael Logo" class="header__img">
+                    </a>
+                </div>
 
                 <div class="header__toggle" id="header-toggle">
                     <i class='bx bx-menu header__drop' id="toggle-button" ></i>
@@ -40,15 +42,15 @@
             <nav class="header__overlay overlay__transition" id="header-overlay" >                
                 <ul class="header__nav___list">
                     <li class="nav__item">
-                        <a href="#home" class="nav__link active">Home</a>
+                        <a href="#home" class="nav__link active">HOME</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#about" class="nav__link">Sobre</a>
+                        <a href="#featured" class="nav__link">DESTAQUES</a>
                     </li>
 
                     <li class="nav__item">
-                        <a href="#projects" class="nav__link">Projetos</a>
+                        <a href="#projects" class="nav__link">PROJETOS</a>
                     </li>
                 </ul>
 
@@ -95,41 +97,63 @@
             <!--=============== HOME ===============-->
             <section class="home" id="home">
                 <div class="home__box">
-                    <h1 class="home__title">ANDREWS</h1>
-                    <h2 class="home__subtitle">DESENVOLVEDOR<br> FRONT-END</h2>
+                    <h1 class="home__title">RAPHAEL ANDREWS<br><span class="home__span">DESENVOLVEDOR<br class="home__br"> FRONT-END</span></h1>
                 </div>
 
-                <a href="#about" class="home__scroll-box">
+                <a href="#featured" class="home__scroll-box">
                     <span class="home__scroll">
-                      <i class='bx bx-chevron-down arrow__1'></i>
-                      <i class='bx bx-chevron-down arrow__2'></i>
-                      <i class='bx bx-chevron-down arrow__3'></i>
-                  </a>            
+                    <i class='bx bx-chevron-down arrow__1'></i>
+                    <i class='bx bx-chevron-down arrow__2'></i>
+                    <i class='bx bx-chevron-down arrow__3'></i>
+                </a>          
             </section>
 
             <a href="#home" class="scroll__top" id="scroll__top"><i class='bx bx-chevrons-up scroll__icon'></i></a>
 
-            <!--=============== ABOUT ===============-->
-            <section class="about" id="about">
-                <div class="about__box">                       
-                    <div class="about__img">
-                        <img src="./src/assets/img/FotoBackground-7.png" class="about__img-img" alt="Desktop Image">
-                    </div>
+            <!--=============== FEATURED ===============-->
+            <section class="featured" id="featured">
+                <h2 class="featured__title">Destaques</h2>
 
-                    <div class="about__info">
-                        <h2 class="about__title">Sobre Mim</h2>
-                        <h3 class="about__subtitle">Desenvolvedor Front End Junior que gosta de novos desafios</h3>
-                        <p class="about__text">Olá, sou um estudante de sistemas para internet que está em busca de sua primeira experiência
-                            profissional como Estagiário ou Desenvolvedor Júnior.
+                <div class="featured__container">
+                    <article class="featured__card mix html css">
+                        <a href="https://raphaelandrews.github.io/Stats-Preview-Card/" target="_blank">
+                            <img src="./src/assets/img/stats-preview-card.png" alt="Stats Preview Card Challenge" class="featured__img">
+                            <div class="featured__overlay">
+                                <h4 class="featured__overlay___title">Stats Preview Card</h4>
+                                <span class="featured__overlay___subtitle">Ver Projeto</span>
+                            </div>
+                        </a>
+                    </article>
 
-                            Nos próximos tópicos você poderá ver quais tecnologias eu estudo e possuo conhecimento, como
-                            também ver os projetos que uso pra treinar minhas habilidades.
+                    <article class="featured__card mix html css">
+                        <a href="https://raphaelandrews.github.io/NFT-Card/" target="_blank">
+                            <img src="./src/assets/img/nft-card.png" alt="NFT Card Challenge" class="featured__img">
+                            <div class="featured__overlay">
+                                <h4 class="featured__overlay___title">NFT Card Challenge</h4>
+                                <span class="featured__overlay___subtitle">Ver Projeto</span>
+                            </div>
+                        </a>
+                    </article>
 
-                            Inicei meus estudos com foco em Front-End, mas hoje busco também me aventurar um pouco com
-                            Java.</p>
+                    <article class="featured__card mix html css javascript">
+                        <a href="https://raphaelandrews.github.io/Interactive-Rating/" target="_blank">
+                            <img src="./src/assets/img/interactive-rating.png" alt="Interactive Rating Challenge" class="featured__img">
+                            <div class="featured__overlay">
+                                <h4 class="featured__overlay___title">Interactive Rating Challenge</h4>
+                                <span class="featured__overlay___subtitle">Ver Projeto</span>
+                            </div>
+                        </a>
+                    </article>
 
-                            <a download href="./src/assets/pdf/Currículo Raphael Andrews.pdf" class="about__cv">Download CV</a>
-                    </div>
+                    <article class="projects__card mix html tailwind">
+                        <a href="https://raphaelandrews.github.io/Profile-Card-Component/" target="_blank">
+                            <img src="./src/assets/img/profile-card-component.png" alt="Profile Card Component Challenge" class="featured__img">
+                            <div class="projects__overlay">
+                                <h4 class="projects__overlay___title">Profile Card Component</h4>
+                                <span class="projects__overlay___subtitle">Ver Projeto</span>
+                            </div>
+                        </a>
+                    </article>
                 </div>
             </section>
 
@@ -209,26 +233,26 @@
             </section>
 
             <!--=============== CONTACT ===============-->
-            <h4>Entre em contato</h4>
-                <form action="mailto: raphaelandrews95@gmail.com">
-                    Nome<br>
-                    <input type="text" name="username" 
-                        placeholder="Digite seu nome"><br><br>
-                    Mensagem<br>
-                    <input type="textarea" name="message" 
-                        rows="10" cols="30" 
-                        placeholder="Enter your message">
-                    <br><br>
-                    <input type="submit" value="Send Email">
-                </form>
+            <section class="contact" id="contact">
+                <h2 class="contact__title">
+                    <a href="" class="contact__text">Vamos trabalhar 
+                        <span>
+                            juntos
+                            <span class="contact__span">
+                                <i class='bx bx-right-arrow-alt contact__arrow'></i>
+                            </span>
+                        </span>
+                    </a>
+                </h2>   
+            </section>
         </main>
 
         <!--=============== FOOTER ===============-->
-        <footer class="background__footer" id="footer">
-            <div class="footer container">
-                <div class="footer__container">
+        <footer class="footer" id="footer">
+            <div class="footer__container container">
+                <div class="footer__main">
                     <div class="footer__1">
-                        <h2 class="footer__title">ANDREWS</h2>
+                        <h3 class="footer__title">ANDREWS</h3>
 
                         <nav>
                             <ul class="footer__nav">
@@ -247,8 +271,8 @@
                         </nav>
                     </div>
                     
-                    <div class="footer__1">
-                        <h2 class="footer__title">ANDREWS</h2>
+                    <div class="footer__1-2">
+                        <h3 class="footer__title">Andrews</h3>
 
                         <nav>
                             <ul class="footer__nav">
@@ -267,7 +291,7 @@
                         </nav>
                     </div>
 
-                    
+                    <div class="footer__divider"></div>
 
                     <div class="footer__2">
                         <div class="footer__links">
@@ -293,7 +317,15 @@
                 </div>
 
                 <div class="footer__info">
-                    <p class="footer__text">Raphael Andrews | Desenvolvedor Front-End</p>
+                    <div class="footer__logo">
+                        <a href="home.html">
+                            <img src="./src/assets/img/logo-site.svg" alt="Raphael Logo" class="footer__img">
+                        </a>
+                    </div>
+                    <div>
+                        <p class="footer__text">RAPHAEL</p>
+                        <p class="footer__text">Desenvolvedor Front-End</p>
+                    </div>
                 </div>
             </div>
         </footer>
@@ -306,5 +338,7 @@
         <script src="./src/js/swiper-bundle.min.js"></script>
 
         <script src="./src/js/main.js"></script>
+
+        <script src="./src/js/routes.js"></script>
     </body>
 </html>

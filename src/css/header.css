@@ -44,7 +44,7 @@
 }
 
 .header__drop:hover {
-    color: var(--first-color-alt);
+    color: var(--second-color);
 }
 
 .header__menu {
@@ -63,11 +63,11 @@
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 1.25rem;
+    gap: 3rem;
     text-align: center;
     background-color: var(--third-color);
-    z-index: var(--z-menu);
     transition: .3s ease-in .2s;
+    z-index: var(--z-menu);
 }
 
 .hover {
@@ -79,18 +79,20 @@
 }
 
 .header__nav___list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.25rem;
     margin-top: -7.5rem;
 }
 
 .nav__link {
+    position: relative;
     font-size: var(--nav-font-size);
-    font-weight: var(--font-regular);
-    line-height: 3.25rem;
+    z-index: var(--z-img);
 }
 
-.nav__link:hover,
-.nav__link:focus {
-    color: var(--first-color);
+.nav__link:hover {
+    color: var(--second-color);
 }
 
 .overlay__links {
@@ -102,7 +104,7 @@
     display: flex;
     width: max-content;
     font-size: var(--h4-font-size);
-    color: var(--fourth-color);
+    color: var(--alternative-color);
     margin: 0 .75rem;
 }
 
@@ -111,12 +113,10 @@
     border-radius: .75rem;
     color: var(--second-color);
     background-color: var(--first-color-alt);
-    transition: .3s;
 }
 
 .header__link:hover {
-    color: var(--first-color-alt);
-    transition: .3s;
+    color: var(--second-color);
 }
 
 .header__links,
@@ -128,7 +128,7 @@
 }
 
 .active {
-    color: var(--second-color) !important; 
+    color: var(--second-color) !important;
 }
 
 /*=============== RESPONSIVE ===============*/
@@ -149,12 +149,12 @@
         top: inherit;
         bottom: inherit;
         height: inherit;
-        background-color: var(--body-color);
         display: flex;
         flex-direction: row;
         justify-content: center;
         gap: 3rem;
         z-index: var(--z-menu);
+        background-color: var(--body-color);
         transition: .3s ease-in .2s;
     }
 
@@ -172,6 +172,7 @@
         align-items: center;
         text-align: left;
         gap: 2rem;
+        background-color: var(--body-color);
     }
 
     .nav__link {

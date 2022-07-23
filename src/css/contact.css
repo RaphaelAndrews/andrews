@@ -1,0 +1,32 @@
+@import 'variables.css';
+@import 'base.css';
+
+.contact {
+    padding: 4.5rem 1.25rem;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.contact__title {
+    display: flex;
+    justify-content: center;
+}
+
+.contact__text {
+    color: var(--alternative-color);
+}
+
+.contact__text:hover {
+    cursor: pointer;
+    color: var(--second-color);
+}
+
+.contact__span {
+    margin-left: -0.25rem;
+}
+
+.contact__arrow {
+    vertical-align: middle;
+    font-size: 2.5rem;
+    color: var(--second-color);
+}
